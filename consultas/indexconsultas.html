@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Crea tu cuenta</title>
 </head>
 <body>
-    <form action="">
+    <form method="post" action="index.js" enctype="multipart/form-data">
         <fieldset>
             <legend>Crea tu cuenta</legend>
             <label for="nombre">Nombre de usuario:</label>
@@ -15,9 +15,9 @@
             <input type="email" name="correo" id="mail" required><br>
             <label for="password">Contraseña:</label>
             <input type="password" name="password" id="password" required><br>
-            <label for=""></label>
-
         </fieldset>
+        <input type="submit" name="Enviar" value="Enviar">
+    <input type="reset" name="Borrar" value="Borrar">
     </form>
 </body>
 </html>
