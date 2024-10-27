@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crea tu cuenta</title>
+    <title>Crear Cuenta</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-    <form method="post" action="index.js" enctype="multipart/form-data">
+<body class="bodyyp">
         <fieldset>
-            <legend>Crea tu cuenta</legend>
-            <label for="nombre">Nombre de usuario:</label>
-            <input type="text" name="Nombre" id="nombre" required><br>
-            <label for="mail">Correo electronico: </label>
-            <input type="email" name="correo" id="mail" required><br>
-            <label for="password">Contraseña:</label>
-            <input type="password" name="password" id="password" required><br>
+            <legend>Contacto</legend>     <!--haciendo un formulario-->
+            <label for="nombre">Nombre :</label>      
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <input type="mensaje" id="mensaje" name="mensaje" required>
+            <button type="submit">Enviar</button>
         </fieldset>
-        <input type="submit" name="Enviar" value="Enviar">
-    <input type="reset" name="Borrar" value="Borrar">
-    </form>
+    
 </body>
 </html>

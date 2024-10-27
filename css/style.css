@@ -56,4 +56,56 @@ li{
 font-family:  sans-serif;
 font-size: 20px;
 
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.boddyp {
+    background-image: url("https://www.bing.com/ck/a?!&&p=56227622c4f2a35e2787c038dc437f7aaf010d3085b1bc19ab0dc59b7d94547eJmltdHM9MTcyOTkwMDgwMA&ptn=3&ver=2&hsh=4&fclid=3caaf89c-0516-63ac-12b8-edb804b36268&u=a1L2ltYWdlcy9zZWFyY2g_cT1mb25kb3MlMjBwYXJhJTIwZm9ybXVsYXJpbyZGT1JNPUlRRlJCQSZpZD1CMjg0NUEyQkMwRDM1NUM0QkQ3RjczMUFDODM0MDFBRTAzOEQ1RDVG&ntb=1");  
+    background-size: contain;  /*estoy agregando una imagen para el fondo del formulario*/
+    background-position: top center;
+    background-repeat: no-repeat;
+ }
+
+
+.formulario {
+background-color: #fff;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 5px ;
+width: 400px;
+margin: 0 auto; /*estoy centrando el formulario */
+}
+
+label {
+display: block;    /*le estoy dando orden a lo de adentro del formulario para que esten la encuenta una abajo de la otra*/
+margin-bottom: 10px;
+}
+
+input {
+width: 80%;
+padding: 10px;
+margin-bottom: 30px;
+border: 1px solid #ccc;
+border-radius: 20px;
+}
+
+button {
+background-color: #1dd147;
+color: #fff;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
 }
