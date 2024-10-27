@@ -1,23 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Nosifer&family=Yellowtail&display=swap");
 @import url("https://fonts.google.com/specimen/Source+Serif+4?preview.text=Surassic%27s&query=s");
 
-body{
+/*Fondo de la pagina principal*/
+.bodyprincipal{
     background-image:url("../Imagenes/trucha\ negra.jpeg");
     background-size:cover;
     background-position:center center;
     background-attachment:fixed ;
 }
-header a{
+
+/*sacamos el color azul a las listas con links*/
+.headerdelaprincipal a{
     text-decoration: none;
     color: #adb5bd;
      
 }
-
-header a:hover{
+/*le ponemos color a las etiquetas con links cuando pasamos con el cursor*/
+.headerdelaprincipal a:hover{
     color: #dee2e6;
 }
 
-#Titulo{
+/*Titulo prinicipal (Surassic's)*/
+#Titulodesurassic{
     
 font-family: specimen;
  display: grid;
@@ -32,7 +36,7 @@ font-family: specimen;
 
 }
 
-header{
+.headerdelaprincipal{
     color: #adb5bd;
     margin-top: -1%;
     position: relative;
@@ -46,12 +50,12 @@ header{
     background-color: #343a40;
 }
 
-ul{
+.barradenavegacion{
     display: flex;
     list-style-type: none;
 }
 
-li{
+.listasdelabarradenavegacion{
     padding: 10px;
 font-family:  sans-serif;
 font-size: 20px;
