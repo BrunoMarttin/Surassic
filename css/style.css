@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Nosifer&family=Yellowtail&display=swap");
+@import url("https://fonts.google.com/specimen/Source+Serif+4?preview.text=Surassic%27s&query=s");
+
+body{
+    background-image:url("../Imagenes/trucha\ original.jpeg");
+    background-size:cover;
+    background-position:center center;
+    background-attachment:fixed ;
+}
+
+#Titulo{
+    
+font-family: specimen;
+ display: grid;
+  font-weight:bold;
+  font-size: 250px;
+  text-align:center;
+  height: 65px;
+  width: 100vw;
+  background-clip: text;
+  color: white;
+  margin-top: -5%;
+
+}
+
+header{
+    position: relative;
+    left: 0%;
+    display: flex;
+    height: 65px;
+    width: 100%;
+}
+
