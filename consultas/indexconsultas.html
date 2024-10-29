@@ -13,19 +13,40 @@
 
                  <!--haciendo un formulario-->
             <div class="nombre">
-            <label for="nombre">Nombre:</label>      
+            <label for="nombre">Nombre y Apellido:</label>      
         </div>
-        <input type="text" id="nombre" name="nombre" required>
-
+        <input type="text" id="nombre" name="nombre" required placeholder="Nombre Apellido">
             <div class="email">
             <label for="email">Email:</label>
             </div>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required placeholder="ejemplo@gmail.com">
 
             <div class="mensaje">
             <label for="mensaje">Mensaje:</label>
+            </div> 
+            <input type="text" id="mensaje" name="mensaje" required  placeholder="ingrese su mensaje aqui">
+
+            <div class="telefono">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="+54 9 299 535 4006">
             </div>
-            <input type="text" id="mensaje" name="mensaje" required>
+
+            <div class="pais">
+                <label for="pais">País:</label>
+                <select id="pais" name="pais">
+                    <option value="argentina">Argentina</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="uruguay">Uruguay</option>
+                    <option value="argentina">Bolivia</option>
+                    <option value="argentina">Paraguay</option>
+                    <option value="argentina">Venenzuela</option>
+                    <option value="argentina">Chile</option>
+                    <option value="argentina">Otro</option>
+                
+                </select>
+            </div>
+            <br>
+            
             <button type="submit">Enviar</button>
 
             
