@@ -67,24 +67,6 @@ font-size: 20px;
 
 } 
 
-.titulodeartistas{
-font-family: Yellowtail;
-font-size: 125px;
-text-align: center;
-margin-top: 500px;
-color: #F4D200;
-}
-
-.truchaconagua{
-    width: 578x;
-    height: 704px;
-}
-
-.truchaconaguaenexpo{
-    width: 578x;
-    height: 704px;
-}
-
 
 
 
@@ -132,7 +114,7 @@ margin-bottom: 30px;
 border: 1px solid #ccc;
 border-radius: 20px;
 }
-
+/*le damos estetica al boton de enviar*/
 button {
 background-color: #1dd147;
 color: #fff;
@@ -148,3 +130,19 @@ cursor: pointer;
 
 
 /*Parte del css que cambia el indexcartistas*/
+
+.cuadros{
+    display: grid;
+    width: 200px;
+    height: 200px;
+    border-radius: 3px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuadros img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+}
