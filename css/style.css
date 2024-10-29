@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Nosifer&family=Yellowtail&display=swap");
 @import url("https://fonts.google.com/specimen/Source+Serif+4?preview.text=Surassic%27s&query=s");
-
-
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Nosifer&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Yellowtail&display=swap');
 /*Parte del css que cambia el index*/
 /*Fondo de la pagina principal*/
 .bodyprincipal{
     background-image:url("../Imagenes/trucha\ negra.jpeg");
     background-size:cover;
-    background-position:center center;
+    background-position:center center; /*Centramos y arreglamos el fondo para que no se vean muchas imagenes iguales*/
     background-attachment:fixed ;
+
 }
 
 /*sacamos el color azul a las listas con links*/
@@ -22,20 +22,7 @@
     color: #dee2e6;
 }
 
-/*Titulo prinicipal (Surassic's)*/
-.Titulodesurassics{
-    
-font-family: specimen;
-  font-weight:bold;
-  font-size: 230px;
-  text-align:center;
-  height: 65px;
-  width: 100vw;
-  background-clip: text;
-  color: #06458d;
-  margin-top: 15%;
 
-}
 /*encabezado*/
 .headerdelaprincipal{
     color: #adb5bd;
@@ -68,6 +55,39 @@ font-size: 20px;
 } 
 
 
+/*Titulo prinicipal (Surassic's)*/
+.Titulodesurassics{
+    
+    font-family: specimen;
+      font-weight:bold;
+      font-size: 150px;
+      text-align:center;
+      height: 65px;
+      width: 100vw;
+      background-clip: text;
+      color: #344e41;
+      margin-top: 0%;
+    
+    }
+
+
+.piedepagina{
+    left: 0%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+    background-color:#6D6D6D ;
+}
+
+.sobrenosotros a{
+    text-decoration: none ;
+    color: #1B1B1B;
+}
+
+.sobrenosotros a:hover{
+    color: white;
+}
 
 
 
@@ -129,7 +149,7 @@ cursor: pointer;
 
 
 
-/*Parte del css que cambia el indexcartistas*/
+/*Parte del css que cambia el indexartistas*/
 
 .cuadros{
     display: grid;
@@ -145,4 +165,38 @@ cursor: pointer;
     height: auto;
     object-fit: cover;
     cursor: pointer;
+}
+
+
+.piedepagina{
+    left: 0%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+    background-color:#6D6D6D ;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Parte del css que cambia sobrenosotros.html*/
+
+.titulosdenosotros{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 80px;
+}
+
+.parrafosdenosotros{
+    text-align: center;
+    font-family: 'Caladea';
+    font-size: 30px;
 }
