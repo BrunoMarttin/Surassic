@@ -20,7 +20,7 @@
             <label for="email">Email:</label>
             </div>
             <input type="email" id="email" name="email" required placeholder="ejemplo@gmail.com">
-
+           <!--datos de la persona-->
             <div class="mensaje">
             <label for="mensaje">Mensaje:</label>
             </div> 
@@ -35,33 +35,80 @@
                 <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
                 <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
             </div>
+<br>
+<div>
+            <label for="genero">Género:</label>
+            <select name="genero" id="genero">
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+            <option value="preferenonodecirlo">Prefiero no decirlo</option>
+            </select>
+            </div>
             
+<br>
             <div class="metodo-contacto">
-                <label for="metodo-contacto">Método de Contacto Preferido:</label>
-                <select id="metodo-contacto" name="metodo-contacto">
+                <label for="metodocontacto">Medio Preferido:</label>
+                <select id="metodocontacto" name="metodocontacto">
                     <option value="email">Email</option>
                     <option value="telefono">Teléfono</option>
                     <option value="instagram">Instagram</option>
                     <option value="facebook">Facebook</option>
+                    <option value="Mensaje comun">Mensaje Comun</option>
+                    <option value="Whatsapp">Whatsapp</option>
+                    <option value="Skype"></Skype>
+                    
                 </select>
             </div>
 <br>
             <div class="pais">
-                <label for="pais">País:</label>
+                <label for="pais">País:</label>        <!--donde vive la persona-->
                 <select id="pais" name="pais">
-                    <option value="argentina">Argentina</option>
-                    <option value="brasil">Brasil</option>
-                    <option value="uruguay">Uruguay</option>
-                    <option value="argentina">Bolivia</option>
-                    <option value="argentina">Paraguay</option>
-                    <option value="argentina">Venenzuela</option>
-                    <option value="argentina">Chile</option>
-                    <option value="argentina">Otro</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Argentina">Bolivia</option>
+                    <option value="Argentina">Paraguay</option>
+                    <option value="Venenzuela">Venenzuela</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Belgica">Belgica</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Camerun">Camerun</option>
+                    <option value="Corea del sur">Corea del sur</option>
+                    <option value="Estados unidos">Estados unidos</option>
+                    <option value="España">España</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Costa rica">Costa rica</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Andorra">Andorra</option>
+                    <option value="Angola">Angola</option>
+                    <option value="Argelia">Argelia</option>
+                    <option value="Austtia">Austtia</option>
+                    
                 
                 </select>
             </div>
             <br>
-            
+
+            <div class="pais">
+                <label for="pordondenosconoce">Por donde nos conoce:</label>        <!--donde vive la persona-->
+                <select id="pordondenosconce" name="pordondenosconoce">
+                    <option value="redes sociales">redes sociales</option>
+                    <option value="algun conocido">algun conocido</option>
+                    <option value="unfamiliar">un familiar</option>
+                    <option value="me gusta el tema y los encontre">me gusta el tema y los encontre</option>
+                    <option value="escuche hablar de esta">escuche hanlar de esta</option>
+                    <option value="otro medio">otro medio</option>
+                  
+                
+                </select>
+            </div>
+            <br>
+        
+            <form id="miformu">
+                <button type="button"
+                onclick="borrarformu">borrar </button>
+            </form>
             <button type="submit">Enviar</button>
 
             
