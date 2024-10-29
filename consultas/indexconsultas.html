@@ -13,24 +13,6 @@
 
                  <!--haciendo un formulario-->
             <div class="nombre">
-
-            <label for="nombre">Nombre:</label>      
-        </div>
-        <input type="text" id="nombre" name="nombre" required>
-
-            <div class="email">
-            <label for="email">Email:</label>
-            </div>
-            <input type="email" id="email" name="email" required>
-
-            <div class="mensaje">
-            <label for="mensaje">Mensaje:</label>
-
-
-            </div>
-
-            <input type="text" id="mensaje" name="mensaje" required>
-
             <label for="nombre">Nombre y Apellido:</label>      
         </div>
         <input type="text" id="nombre" name="nombre" required placeholder="Nombre Apellido">
@@ -49,6 +31,21 @@
                 <input type="tel" id="telefono" name="telefono" placeholder="+54 9 299 535 4006">
             </div>
 
+            <div class="fecha-nacimiento">
+                <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+            </div>
+            
+            <div class="metodo-contacto">
+                <label for="metodo-contacto">Método de Contacto Preferido:</label>
+                <select id="metodo-contacto" name="metodo-contacto">
+                    <option value="email">Email</option>
+                    <option value="telefono">Teléfono</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="facebook">Facebook</option>
+                </select>
+            </div>
+<br>
             <div class="pais">
                 <label for="pais">País:</label>
                 <select id="pais" name="pais">
