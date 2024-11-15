@@ -5,14 +5,15 @@
 
 
 
-/* css que cambia el index*/
-
 /* Fondo de la página principal */
 .bodyprincipal{
    background-color: #111010;
+   background-image: url("../Imagenes/Logo\ flavor\ sur\ etiquetas\ 2.png");
+   background-position: center -300px;
+   background-size: 2000px;
+   background-repeat: no-repeat;
    display: flex;
     flex-direction: column;
-    min-height: 100vh; /* 100% de la altura de la ventana */
     margin: 0;
 
 }
@@ -31,17 +32,13 @@
 
 /*encabezado*/
 .headerdelaprincipal{
-    color: #adb5bd;
-    margin-top: -1%;
+    color: #adb5bd; 
     position: relative;
-    left: -1%;
     display: flex;
-    height: 55px;
-    width: 110%;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
     padding: 10px;
-    background-color: #343a40;
+    background-color: transparent;
 }
 
 .barradenavegacion{
@@ -49,9 +46,8 @@
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    padding: 40px;
-    margin-top: 36px;
 }
+
 
 .listasdelabarradenavegacion{
     
@@ -63,19 +59,50 @@ font-size: 20px;
 
 
 /*Titulo prinicipal (Surassic's)*/
-.Titulodesurassics{
-    
+.main{
+   text-align: center;
+   margin-top: 400px;
+}
+
+.Titulodesurassics{ 
     font-family: specimen;
-      font-weight:bold;
-      font-size: 170px;
-      text-align:center;
+      font-size: 150px;
       height: 65px;
-      width: 100vw;
-      background-clip: text;
-      color: #344e41;
-      margin-top: 0%;
-    
+      color: #2d3531;
+      animation: animacion 0.7s; /*le damos un tiempo para que se complete la animacion */
     }
+
+    /* animacion para el titulo y boton */
+@keyframes animacion {
+    0% {
+        opacity: 0; /* se pone transparente */
+        transform: translateY(20px); /* se pone un poco abajo cuando esta invisible */
+    }
+    100% {
+        opacity: 1; /* se pone completamente visible */
+        transform: translateY(0); /*y vuelve a la posicion original */
+    }
+}
+
+.boton{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2d3531;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 400px;
+    opacity: 0; 
+    animation: animacion 0.7s ease-out forwards; 
+}
+
+.boton:hover {
+    background-color: #434e4a;
+}
+
+.linkdelboton{
+    text-decoration: none;
+    color: #c0bcbc93;
+}
 
 
 
@@ -104,7 +131,6 @@ font-size: 20px;
     .filasdelfooter{
         display: flex;
         flex-wrap: wrap; /*Para que se vea bien si se achica la pagina*/
-
     }
 
     .linksdelfooter{
