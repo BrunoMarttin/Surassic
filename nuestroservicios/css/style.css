@@ -10,7 +10,7 @@ body {
 }
 
 
-/* Estilos del contenedor de servicios */
+/* Estilos del contenedor de servicio */
 .servicios {
     display: flex;
     flex-direction: column;
