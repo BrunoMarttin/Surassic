@@ -1,48 +1,47 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+ody {
+    font-family: Arial, sans-serif; /* Establece la fuente a Arial, con una fuente secundaria sans-serif */
+    margin: 0; /* Elimina márgenes predeterminados del body */
+    padding: 0; /* Elimina el relleno predeterminado del body */
+    background-color: #ffffff; /* Establece el fondo blanco */
+    display: flex; /* Usa Flexbox para alinear los elementos dentro del body */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 100vh; /* Hace que el body ocupe el 100% de la altura de la ventana */
 }
 
-/* Sección principal de envio*/
+/* Sección principal de envío */
 .Envios {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 300px;
+    display: flex; /* Utiliza Flexbox para que los elementos se alineen en un contenedor flexible */
+    justify-content: center; /* Centra los elementos horizontalmente dentro de .Envios */
+    align-items: center; /* Centra los elementos verticalmente dentro de .Envios */
+    text-align: center; /* Alinea el texto al centro */
+    padding: 300px; /* Añade un gran espacio alrededor del contenido dentro de .Envios */
 }
 
-
-/* Contenedor del Envio */
+/* Contenedor principal del Envio */
 .Envio {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    width: 80%;
+    background-color: #ffffff; /* Fondo blanco para el contenedor */
+    padding: 30px; /* Añade espacio interno alrededor del contenido */
+    border-radius: 8px; /* Bordes redondeados para suavizar el contorno del contenedor */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
+    max-width: 600px; /* Establece un ancho máximo de 600px para el contenedor */
+    width: 80%; /* Establece el ancho al 80% del contenedor padre */
 }
 
-/* Título de Envio*/
+/* Estilo del título dentro del contenedor de Envio */
 .titulo-Envio {
-    font-size: 36px;
-    font-weight: bold;
-    color: #2c3e50;
-    margin-bottom: 15px;
+    font-size: 36px; /* Tamaño grande para el título */
+    font-weight: bold; /* Hace que el título sea negrita */
+    color: #2c3e50; /* Color oscuro para el título */
+    margin-bottom: 15px; /* Espacio debajo del título */
 }
 
-/* Descrip del Envio  */
+/* Estilo de la descripción dentro del contenedor de Envio */
 .descripcion-Envio {
-    font-size: 18px;
-    color: #555;
-    line-height: 1.6;
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 0 15px;
+    font-size: 18px; /* Tamaño de fuente medio para la descripción */
+    color: #555; /* Color gris para el texto */
+    line-height: 1.6; /* Mejora la legibilidad al aumentar el espacio entre líneas */
+    max-width: 700px; /* Establece el ancho máximo de la descripción */
+    margin: 0 auto; /* Centra la descripción horizontalmente */
+    padding: 0 15px; /* Añade relleno a los lados para evitar que el texto toque los bordes */
 }
