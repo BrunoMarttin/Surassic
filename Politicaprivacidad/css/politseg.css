@@ -10,7 +10,7 @@ body {
 }
 
 /* Sección principal de compra */
-.comprar {
+.Politicas {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@ body {
 
 
 /* Contenedor de la compra */
-.compra {
+.Politica {
     background-color: #ffffff;
     padding: 30px;
     border-radius: 8px;
@@ -30,7 +30,7 @@ body {
 }
 
 /* Título de la sección "Cómo Comprar" */
-.titulo-compra {
+.titulo-Politica {
     font-size: 36px;
     font-weight: bold;
     color: #2c3e50;
@@ -38,7 +38,7 @@ body {
 }
 
 /* Descrip de la compra */
-.descripcion-compra {
+.descripcion-Politica {
     font-size: 18px;
     color: #555;
     line-height: 1.6;
