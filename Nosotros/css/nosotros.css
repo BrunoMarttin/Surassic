@@ -55,8 +55,6 @@ header{
 body {
     animation: aparecer 2s;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #111010;
 }
 
