@@ -37,7 +37,17 @@ header{
     font-size: 20px;
 }
 
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateY(-40px);
+    }
 
+    to{
+        opacity: 1;
+        transform: translateY(-10);
+    }
+}
 
 
 
@@ -46,6 +56,7 @@ header{
 
 body{
     background-color: #111010;
+    animation: aparecer 2s;
 }
 
 .cuadros{

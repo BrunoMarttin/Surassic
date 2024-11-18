@@ -6,146 +6,90 @@
     <title>Crear Cuenta</title>
     <link rel="stylesheet" href="css/styleconsultas.css">
 </head>
-<body class="bodyyp">
+<body>
     
-    <header class="headerdelaprincipal">
-<!--barra de navegacion-->
-        <nav id="menu">
-        <ul class="barradenavegacion">
-            <li class="listasdelabarradenavegacion">
-                <a href="../index.html">Inicio</a>
-            </li>
-            <li class="listasdelabarradenavegacion"><a href="../artistas/indexartistas.html">Artistas</a></li>
-            <li class="listasdelabarradenavegacion">
-                <a href="indexconsultas.html">Contactanos</a>
-            </li>
-            <li class="listasdelabarradenavegacion">
-                <a href="https://www.instagram.com/surassic/">Instagram</a>
-            </li>
-            <li class="listasdelabarradenavegacion">
-                <a href="https://wa.me/qr/3CGBJ2RSVK3XJ1">Whatsapp</a>
-            </li>
-            <li class="listasdelabarradenavegacion">
-                <a href="https://www.google.com.ar/maps/place/San+José+de+Feliciano,+Q8302+Neuquén/@-38.9458968,-68.105129,19z/data=!4m15!1m8!3m7!1s0x960a33731fa47e89:0x1e15da20cf91655a!2sSan+José+de+Feliciano,+Q8302+Neuquén!3b1!8m2!3d-38.9458968!4d-68.1044839!16s%2Fg%2F1tfcjz6s!3m5!1s0x960a33731fa47e89:0x1e15da20cf91655a!8m2!3d-38.9458968!4d-68.1044839!16s%2Fg%2F1tfcjz6s?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D">Ubicacion</a>
-            </li>
-        </ul>
-      </nav>
+    <header>
+
+        <!--barra de navegacion-->
+        <nav>
+            <div class="barradenavegacion">
+                <ul class="listasdelabarradenavegacion">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../artistas/indexartistas.html">Obras</a></li>
+                    <li><a href="indexconsultas.html">Crea tu cuenta</a></li>
+                    <li><a href="https://www.google.com.ar/maps/place/San+José+de+Feliciano,+Q8302+Neuquén/@-38.9458968,-68.105129,19z/data=!4m15!1m8!3m7!1s0x960a33731fa47e89:0x1e15da20cf91655a!2sSan+José+de+Feliciano,+Q8302+Neuquén!3b1!8m2!3d-38.9458968!4d-68.1044839!16s%2Fg%2F1tfcjz6s!3m5!1s0x960a33731fa47e89:0x1e15da20cf91655a!8m2!3d-38.9458968!4d-68.1044839!16s%2Fg%2F1tfcjz6s?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D">Ubicacion</a></li>
+                </ul>
+            </div>
+        </nav>
+  
     </header>
-<br>
+        
 
 
 
-        <div class="formulario"><form action="">
-            <div class="legend"><legend>Contactanos:</legend></div> 
-        <fieldset>
+<main>
 
-                 <!--haciendo un formulario-->
-            <div class="nombre">
-            <label for="nombre">Nombre y Apellido:</label>      
-        </div>
-        <input type="text" id="nombre" name="nombre" required placeholder="Nombre Apellido">
-            <div class="email">
-            <label for="email">Email:</label>
-            </div>
-            <input type="email" id="email" name="email" required placeholder="ejemplo@gmail.com">
-           <!--datos de la persona-->
-            <div class="mensaje">
-            <label for="mensaje">Mensaje:</label>
-            </div> 
-            <input type="text" id="mensaje" name="mensaje" required  placeholder="ingrese su mensaje aqui">
+    <div class="formulario">
 
-            
-
-            <div class="fecha-nacimiento">
-                <label for="fecha-nacimiento">Fecha de Nacimiento:</label>          <!--cuando nacio-->
-                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
-            </div>
-<br>
-<div>
-            <label for="genero">Género:</label>         <!--genero de la persona-->
-            <select name="genero" id="genero">
-            <option value="masculino">Masculino</option>
-            <option value="femenino">Femenino</option>
-            <option value="otro">Otro</option>
-            <option value="preferenonodecirlo">Prefiero no decirlo</option>
-            </select>
-            </div>
-            
-<br>
-            <div class="metodo-contacto">
-                <label for="metodocontacto">Medio Preferido:</label>
-                <select id="metodocontacto" name="metodocontacto">
-                    <option value="email">Email</option>            <!--por donde le gusta que le escriban-->
-                    <option value="telefono">Teléfono</option>
-                    <option value="instagram">Instagram</option>
-                    <option value="facebook">Facebook</option>
-                    <option value="Mensaje comun">Mensaje Comun</option>
-                    <option value="Whatsapp">Whatsapp</option>
-                    <option value="Skype"></Skype>
+        <form>
+            <div class="fieldsett">
+                <fieldset>
                     
-                </select>
-            </div>
-<br>
-            
-            <div>
-            <label for="edad">Edad:</label>
-            <select id="edad" name="edad">        <!--edad de la persona-->
-              <option value="14-18">14-18 años</option>
-              <option value="18-22">18-22años</option>
-              <option value="22-26">22-26 años</option>
-              <option value="30-34">30-34 años</option>
-              <option value="38-42">38-42 años</option>
-              <option value="46-50">46-50 años</option>
-              <option value="50-54">50-54 años</option>
-              <option value="58-62">58-62 años</option>
-              <option value="62-66">62-66 años</option>
-              <option value="66-70">66-70 años</option>
-              <option value="70-74">70-74 años</option>
-            </select>
-            </div>
-<br>
-            <div class="pais">
-                <label for="pordondenosconoce">Por donde nos conoce:</label>        <!--desde donde nos conoce-->
-                <select id="pordondenosconce" name="pordondenosconoce">
-                    <option value="redes sociales">redes sociales</option>
-                    <option value="algun conocido">algun conocido</option>
-                    <option value="unfamiliar">un familiar</option>
-                    <option value="me gusta el tema y los encontre">me gusta el tema y los encontre</option>
-                    <option value="escuche hablar de esta">escuche hablar de esto</option>
-                    <option value="otro medio">otro medio</option>
-                  
-                
-                </select>
-            </div>
-            <br>
-    
-            <form id="miformu">
-                <button type="button"
-                onclick="borrarformu">borrar </button>
-            </form>
-            <button type="submit">Enviar</button>
+                    <legend>Crear Cuenta</legend>
+                    <br>
+                    <div class="contenido">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="Nombre" id="nombre" placeholder="Ejemplo: Tamir" required> 
+                        <br>
+                        
+                        <label for="Apellido">Apellido</label>
+                        <input type="text" name="Apellido" id="Apellido" placeholder="Ejemplo: Legarreta" required> 
+                        <br>
+                    
+                        <label for="tag">Nombre de usuario</label>
+                        <input type="text" name="tag" id="tag" placeholder="Ejemplo: Donko"> <br>
 
+                        <label for="mail">Email:</label>
+                        <input type="email" name="mail" id="mail" placeholder="Ejemplo: hola123@gmail.com" required> <br>
             
-        </fieldset>
+                        <label for="contra">Contraseña</label>
+                        <input type="password" name="contra" id="contra" placeholder="Ejemplo: 12345" required><br>
+            
+                        <label for="genero">Género:</label>
+                            <select name="genero" id="genero">
+                                <option value="masculino">Masculino</option>
+                                <option value="femenino">Femenino</option>
+                                <option value="otro">Otro</option>
+                                <option value="preferenonodecirlo">Prefiero no decirlo</option>
+                            </select><br><br>
+                            
+                    </div>
+
+                    <button type="reset" class="botonborrar">Borrar</button>
+                    <button type="submit" class="botonenviar">Enviar</button>
+                </fieldset>
+            </div>
+        </form>
+
     </div>
-</form>
 
+</main>
 
-
-
-<footer class="footer">
+<footer>
 
     <div class="contenedor">
         
         <div class="filasdelfooter">
 
+            <a href="../index.html"><img src="../Imagenes/Logo negativo Flavor Sur 2.png" width="280" height="320"></a>
+
                 <div class="linksdelfooter">
                     <h4>Emprendimiento</h4>
 
                         <ul>
-                            <li ><a href="#">Nosotros</a></li>
-                            <li ><a href="#">Nuestros Servicios</a></li>
-                            <li ><a href="#">Politica de privacidad</a></li>
+                            <li ><a href="../Nosotros/nosotros.html">Nosotros</a></li>
+                            <li ><a href="../nuestroservicios/nuestrosservicios.html">Nuestros Servicios</a></li>
+                            <li ><a href="../Politicaprivacidad/politicaprivacidad.html">Politica de privacidad</a></li>
                         </ul>
 
                 </div>
@@ -155,10 +99,10 @@
                     <h4>Ayuda</h4>
 
                     <ul>
-                        <li><a href="#">Preguntas</a></li>
-                        <li><a href="#">Compras</a></li>
-                        <li><a href="#">Envios</a></li>
-                        <li><a href="#">Pago</a></li>
+                        <li><a href="../Preguntas/preguntas.html">Preguntas</a></li>
+                        <li><a href="../Comocomprar/indexcomocomprar.html">Compras</a></li>
+                        <li><a href="../Envios/envios.html">Envios</a></li>
+                        <li><a href="../Pago/pago.html">Pago</a></li>
                     </ul>
 
                 </div>
@@ -167,21 +111,20 @@
                     <h4>Redes Sociales</h4>
 
                         <ul>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Whatsapp</a></li>
+                            <li><a href="https://www.instagram.com/surassic/">Instagram</a></li>
+                            <li><a href="https://wa.me/qr/3CGBJ2RSVK3XJ1">Whatsapp</a></li>
                         </ul>
 
                 </div>
 
                 
-
+                
         </div>
 
 
     </div>
 
 </footer>
-
 
 </body>
 </html>
