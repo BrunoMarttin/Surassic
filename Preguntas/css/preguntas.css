@@ -1,16 +1,72 @@
-/* Reseteo de márgenes y rellenos en todos los elementos */
-* {
-    margin: 0; /* Elimina márgenes predeterminados */
-    padding: 0; /* Elimina relleno predeterminado */
-    box-sizing: border-box; /* Asegura que el padding y borde se incluyan en el tamaño total del elemento */
+/*encabezado*/
+header{
+    color: #adb5bd; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: transparent;
+    
 }
+
+
+/*sacamos el color azul a las listas con links*/
+.barradenavegacion a{
+    text-decoration: none;
+    color: #adb5bd;
+}
+
+
+/*le ponemos color a las etiquetas con links cuando pasamos con el cursor*/
+.barradenavegacion a:hover{
+    color: #dee2e6;
+}
+
+/*Desplegamos las listas horizontalmente*/
+.listasdelabarradenavegacion {
+    display: flex;
+    list-style-type: none;
+    
+}
+
+.listasdelabarradenavegacion li {
+    padding: 20px;
+    font-family:  sans-serif;
+    font-size: 20px;
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(-10);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Estilo general para el cuerpo de la página */
 body {
+    animation: aparecer 2s;
     font-family: Arial, sans-serif; /* Fuente clara y moderna */
     background: #405056; /* Fondo suave y claro */
     color: #333; /* Color oscuro para el texto */
-    text-align: center; /* Centra todo el contenido dentro del body */
 }
 
 /* Estilos para el contenedor del formulario */
@@ -68,3 +124,83 @@ textarea {
 .submit-btn:hover {
     background: #004085; /* Cambia el color de fondo a un azul más oscuro al pasar el ratón */
 }
+
+
+
+
+
+/*css que cambia el footer*/
+
+ul{
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left:-30px ;
+}
+
+.contenedor{
+    max-width: 1200;
+    margin: 0px auto;
+    flex: 1;
+    
+}
+
+footer{
+    background-color: #343a40;
+    padding: 80px;
+    margin-top: 440px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -10px;
+}
+
+.filasdelfooter{
+    display: flex;
+    flex-wrap: wrap; /*Para que se vea bien si se achica la pagina*/
+}
+
+.linksdelfooter{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.linksdelfooter h4 {
+    font-family: sans-serif;
+    font-size: 25px;
+    color: rgb(88, 134, 115);
+    font-weight: 700; /*Cambio el grosor de la letra*/
+    border-bottom: 5px solid rgb(0, 255, 149); /*Agrego un subrayado*/
+    padding-bottom: 10px; /*pongo un espacio entre el titulo y el subrayado*/
+    display: inline-block;/*Corrigo el subrayado para que sea del mismo tamaño que el titulo*/
+    
+    
+}
+
+.linksdelfooter ul li a {
+    font-size: 17px;
+    text-decoration: none;
+    color: rgb(228, 203, 203);
+    transition: all .4s ease;
+
+    
+}
+
+.linksdelfooter ul li a:hover {
+    color: white;
+    padding-left: 6px;
+
+}
+
+
+/*le decimos a filasdelfooter que cuando baje de 991px se centre todo (basicamente el responsive)*/
+@media(max-width:991px) {
+    .filasdelfooter{
+        text-align: center;
+    }
+
+    .linksdelfooter{
+        width: 100%;
+        margin-bottom: 30px;
+
+    }
+}
+
