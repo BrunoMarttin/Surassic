@@ -1,12 +1,66 @@
-ody {
-    font-family: Arial, sans-serif; /* Establece la fuente a Arial, con una fuente secundaria sans-serif */
-    margin: 0; /* Elimina márgenes predeterminados del body */
-    padding: 0; /* Elimina el relleno predeterminado del body */
-    background-color: #ffffff; /* Establece el fondo blanco */
-    display: flex; /* Usa Flexbox para alinear los elementos dentro del body */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
-    height: 100vh; /* Hace que el body ocupe el 100% de la altura de la ventana */
+/*encabezado*/
+header{
+    color: #adb5bd; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: transparent;
+    margin: 0;
+    
+}
+
+
+/*sacamos el color azul a las listas con links*/
+.barradenavegacion a{
+    text-decoration: none;
+    color: #adb5bd;
+}
+
+
+/*le ponemos color a las etiquetas con links cuando pasamos con el cursor*/
+.barradenavegacion a:hover{
+    color: #dee2e6;
+}
+
+/*Desplegamos las listas horizontalmente*/
+.listasdelabarradenavegacion {
+    display: flex;
+    list-style-type: none;
+    
+}
+
+.listasdelabarradenavegacion li {
+    padding: 20px;
+    font-family:  sans-serif;
+    font-size: 20px;
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(-10);
+    }
+}
+
+
+
+
+
+
+
+
+
+body {
+    animation: aparecer 2s;
+    font-family: Arial, sans-serif;
+    background-color: #111010;
 }
 
 /* Sección principal de envío */
@@ -20,7 +74,7 @@ ody {
 
 /* Contenedor principal del Envio */
 .Envio {
-    background-color: #ffffff; /* Fondo blanco para el contenedor */
+    background-color: #9b9595; /* Fondo blanco para el contenedor */
     padding: 30px; /* Añade espacio interno alrededor del contenido */
     border-radius: 8px; /* Bordes redondeados para suavizar el contorno del contenedor */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
@@ -39,9 +93,94 @@ ody {
 /* Estilo de la descripción dentro del contenedor de Envio */
 .descripcion-Envio {
     font-size: 18px; /* Tamaño de fuente medio para la descripción */
-    color: #555; /* Color gris para el texto */
+    color: #ffffff; /* Color gris para el texto */
     line-height: 1.6; /* Mejora la legibilidad al aumentar el espacio entre líneas */
     max-width: 700px; /* Establece el ancho máximo de la descripción */
     margin: 0 auto; /* Centra la descripción horizontalmente */
     padding: 0 15px; /* Añade relleno a los lados para evitar que el texto toque los bordes */
 }
+
+
+
+
+
+
+
+
+
+    /*css que cambia el footer*/
+
+    ul{
+        list-style: none;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left:-30px ;
+    }
+
+    .contenedor{
+        max-width: 1200;
+        margin: 0px auto;
+        flex: 1;
+        
+    }
+
+    footer{
+        background-color: #343a40;
+        padding: 80px;
+        margin-top: 140px;
+        margin-left: -10px;
+        margin-right: -10px;
+        margin-bottom: -10px;
+    }
+
+    .filasdelfooter{
+        display: flex;
+        flex-wrap: wrap; /*Para que se vea bien si se achica la pagina*/
+    }
+
+    .linksdelfooter{
+        width: 25%;
+        padding: 0 15px;
+    }
+
+    .linksdelfooter h4 {
+        font-family: sans-serif;
+        font-size: 25px;
+        color: rgb(88, 134, 115);
+        font-weight: 700; /*Cambio el grosor de la letra*/
+        border-bottom: 5px solid rgb(0, 255, 149); /*Agrego un subrayado*/
+        padding-bottom: 10px; /*pongo un espacio entre el titulo y el subrayado*/
+        display: inline-block;/*Corrigo el subrayado para que sea del mismo tamaño que el titulo*/
+        
+        
+    }
+
+    .linksdelfooter ul li a {
+        font-size: 17px;
+        text-decoration: none;
+        color: rgb(228, 203, 203);
+        transition: all .4s ease;
+
+        
+    }
+
+    .linksdelfooter ul li a:hover {
+        color: white;
+        padding-left: 6px;
+
+    }
+
+
+    /*le decimos a filasdelfooter que cuando baje de 991px se centre todo (basicamente el responsive)*/
+    @media(max-width:991px) {
+        .filasdelfooter{
+            text-align: center;
+        }
+
+        .linksdelfooter{
+            width: 100%;
+            margin-bottom: 30px;
+
+        }
+    }
+
+
