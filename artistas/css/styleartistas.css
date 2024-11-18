@@ -1,75 +1,53 @@
 
+/*encabezado*/
+header{
+    color: #adb5bd; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: transparent;
+    
+}
+
+
 /*sacamos el color azul a las listas con links*/
-.headerdelaprincipal a{
+.barradenavegacion a{
     text-decoration: none;
     color: #adb5bd;
-     
 }
+
+
 /*le ponemos color a las etiquetas con links cuando pasamos con el cursor*/
-.headerdelaprincipal a:hover{
+.barradenavegacion a:hover{
     color: #dee2e6;
 }
 
-
-
-
-
-
-/*encabezado*/
-.headerdelaprincipal{
-    color: #adb5bd;
-    margin-top: -1%;
-    position: relative;
-    left: -1%;
+/*Desplegamos las listas horizontalmente*/
+.listasdelabarradenavegacion {
     display: flex;
-    height: 55px;
-    width: 110%;
-    align-items: center;
-    justify-content: left;
-    padding: 10px;
-    background-color: #343a40;
-}
-
-.barradenavegacion{
-    
-    display: flex;
-    flex-direction: row;
     list-style-type: none;
-    padding: 40px;
-    margin-top: 36px;
+    
 }
 
-.listasdelabarradenavegacion{
-    
+.listasdelabarradenavegacion li {
     padding: 20px;
-font-family:  sans-serif;
-font-size: 20px;
-
-} 
-
-
-
-
-
-
-
-
-.bodyartistas{
-    height: 100%;
-    margin: 0;
-    
+    font-family:  sans-serif;
+    font-size: 20px;
 }
 
-.tododeartistas{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+
+
+
+
+
+
+
+body{
+    background-color: #111010;
 }
 
-.mainartistas{
-    flex: 1;
-}
- 
 .cuadros{
     display: grid;
     grid-template-columns: repeat(3,1fr); /*3 columnas iguales*/
@@ -88,9 +66,9 @@ font-size: 20px;
 
 
 
-   /*css que cambia el footer*/
+/*css que cambia el footer*/
 
-   ul{
+ul{
     list-style: none;
     font-family: Arial, Helvetica, sans-serif;
     margin-left:-30px ;
@@ -103,16 +81,15 @@ font-size: 20px;
     
 }
 
-.footer{
+footer{
     background-color: #343a40;
     padding: 80px;
-    margin-top: 10px;
+    margin-top: 140px;
 }
 
 .filasdelfooter{
     display: flex;
     flex-wrap: wrap; /*Para que se vea bien si se achica la pagina*/
-
 }
 
 .linksdelfooter{
@@ -160,3 +137,5 @@ font-size: 20px;
 
     }
 }
+
+

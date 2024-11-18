@@ -6,7 +6,7 @@
 
 
 /* Fondo de la página principal */
-.bodyprincipal{
+body{
    background-color: #111010;
    background-image: url("../Imagenes/Logo\ flavor\ sur\ etiquetas\ 2.png");
    background-position: center -300px;
@@ -18,20 +18,8 @@
 
 }
 
-/*sacamos el color azul a las listas con links*/
-.headerdelaprincipal a{
-    text-decoration: none;
-    color: #adb5bd;
-     
-}
-/*le ponemos color a las etiquetas con links cuando pasamos con el cursor*/
-.headerdelaprincipal a:hover{
-    color: #dee2e6;
-}
-
-
 /*encabezado*/
-.headerdelaprincipal{
+header{
     color: #adb5bd; 
     position: relative;
     display: flex;
@@ -39,23 +27,34 @@
     justify-content: center;
     padding: 10px;
     background-color: transparent;
+    
 }
 
-.barradenavegacion{
-    
+
+/*sacamos el color azul a las listas con links*/
+.barradenavegacion a{
+    text-decoration: none;
+    color: #adb5bd;
+}
+
+
+/*le ponemos color a las etiquetas con links cuando pasamos con el cursor*/
+.barradenavegacion a:hover{
+    color: #dee2e6;
+}
+
+/*Desplegamos las listas horizontalmente*/
+.listasdelabarradenavegacion {
     display: flex;
-    flex-direction: row;
     list-style-type: none;
+    
 }
 
-
-.listasdelabarradenavegacion{
-    
+.listasdelabarradenavegacion li {
     padding: 20px;
-font-family:  sans-serif;
-font-size: 20px;
-
-} 
+    font-family:  sans-serif;
+    font-size: 20px;
+}
 
 
 /*Titulo prinicipal (Surassic's)*/
@@ -122,7 +121,7 @@ font-size: 20px;
         
     }
 
-    .footer{
+    footer{
         background-color: #343a40;
         padding: 80px;
         margin-top: 640px;

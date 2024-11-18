@@ -1,0 +1,70 @@
+/* Reseteo de márgenes y rellenos en todos los elementos */
+* {
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina relleno predeterminado */
+    box-sizing: border-box; /* Asegura que el padding y borde se incluyan en el tamaño total del elemento */
+}
+
+/* Estilo general para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Fuente clara y moderna */
+    background: #405056; /* Fondo suave y claro */
+    color: #333; /* Color oscuro para el texto */
+    text-align: center; /* Centra todo el contenido dentro del body */
+}
+
+/* Estilos para el contenedor del formulario */
+.container {
+    max-width: 600px; /* Máximo ancho del formulario */
+    margin: 50px auto; /* Centra el formulario vertical y horizontalmente */
+    padding: 20px; /* Espaciado interno alrededor del contenido */
+    background: #ffffff; /* Fondo blanco para el formulario */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Estilo para los títulos dentro del contenedor */
+h1 {
+    color: #0056b3; /* Color azul para el título */
+}
+
+p {
+    color: #555; /* Color gris claro para la descripción */
+}
+
+/* Estilo para los campos de entrada (input y textarea) */
+input, textarea {
+    width: 100%; /* Los campos ocupan todo el ancho disponible */
+    padding: 10px; /* Espaciado interno en los campos */
+    margin-bottom: 15px; /* Espacio debajo de cada campo */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes ligeramente redondeados */
+}
+
+/* Estilo para los campos cuando tienen el foco (se hace clic en ellos) */
+input:focus, textarea:focus {
+    border-color: #0056b3; /* Cambia el borde a azul cuando se hace foco */
+    outline: none; /* Elimina el borde azul por defecto de los navegadores */
+}
+
+/* Estilo específico para el área de texto (textarea) */
+textarea {
+    height: 150px; /* Altura fija para el área de texto */
+    resize: none; /* Desactiva la opción de redimensionar el área de texto */
+}
+
+/* Estilo para el botón de envío */
+.submit-btn {
+    background: #0056b3; /* Fondo azul para el botón */
+    color: rgb(255, 255, 255); /* Texto blanco en el botón */
+    padding: 12px; /* Espaciado interno del botón */
+    border: none; /* Elimina el borde predeterminado del botón */
+    border-radius: 4px; /* Bordes redondeados para el botón */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+    transition: background 0.3s; /* Suaviza el cambio de color al pasar el ratón */
+}
+
+/* Estilo para cuando el usuario pasa el ratón sobre el botón */
+.submit-btn:hover {
+    background: #004085; /* Cambia el color de fondo a un azul más oscuro al pasar el ratón */
+}
